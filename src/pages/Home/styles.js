@@ -35,9 +35,14 @@ export const Templates = styled.div`
     margin-bottom: 30px ;
 
     button{
-        border: 0;
         background: transparent;
         margin-right: 10px;
+        border: 2px solid transparent;
+
+
+        &.selected{
+            border-color: #4395D8;
+        }
 
         img{
             width: 53px;
@@ -54,7 +59,7 @@ export const Form = styled.form`
         border: 1px solid #DBDBDB;
         padding: 0 15px;
         font-size: 14px;
-        nargin-bottom: 10px;
+        margin-bottom: 10px;
 `;
 
 export const Button = styled.button`
@@ -67,11 +72,6 @@ export const Button = styled.button`
     font-weight: bold;
     transition: background 0.2s ease-in;
     font-size: 14px;
-    border: 2px solid transparent;
-
-    &.selected{
-        border-color: #4395D8
-    }
 
     &:hover{
         background: #3672A3;
